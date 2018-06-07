@@ -1,0 +1,16 @@
+{
+  "web": {
+    "client_id": "119284741096-ovkbtko4qegq3uftl5p9p1tpr7056om0.apps.googleusercontent.com",
+    "project_id": "inspired-gift-127117",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "TwNntbjlsUyYd9vZvuWmR6qm",
+    "redirect_uris": [
+      "http://localhost:8000"
+    ],
+    "javascript_origins": [
+      "http://localhost:8000"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css
+          href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+
+<body>
+<div class='pane'>
+    <div class='header'>
+        <h1>All catalogs </h1>
+    </div>
+
+
+    {% for i in catalog %}
+    <div class='nameAndPrice'>
+        <span class='name'><p>{{i.name}}</p></span>
+        <a href='{{url_for(' catalogMenu',
+        catalog_id =i.id)}}' >Visit</a>
+    </div>
+
+
+</div>
+
+
+{% endfor %}
+
+
+</div>
+</div>
+</body>
+
+
+</html>
