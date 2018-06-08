@@ -72,9 +72,9 @@ class CatalogItem(Base):
 
 
 def select_data():
-    sql_cmd = sqlalchemy.text(" select cat.name as name from catalog_item  cat inner join  "
-                              "catalog c on cat.catalog_id =c.id  group by c.id"
-                              "  order by  cat.id desc,c.id   limit 10 ")
+    sql_cmd = sqlalchemy.text(" select catalog_item.name as name from catalog_item    inner join  "
+                              "catalog   on catalog_item.catalog_id =catalog.id  group by catalog.id"
+                              "  order by  catalog_item.id desc,catalog.id   limit 10 ")
     res = engine.execute(sql_cmd).fetchall()
     return res
 
