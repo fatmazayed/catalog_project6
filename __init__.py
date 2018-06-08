@@ -1,15 +1,16 @@
+import httplib2
 import json
 import random
+import requests
 import string
 
-import httplib2
-import requests
 from flask import Flask, render_template, request, redirect, \
     jsonify, url_for, flash
 from flask import make_response
 from flask import session as login_session
-from oauth2client.client import FlowExchangeError
-from oauth2client.client import flow_from_clientsecrets
+
+#import oauth2client.client
+
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
 
@@ -144,7 +145,7 @@ def gconnect():
         oauth_flow = flow_from_clientsecrets('client_secres.json', scope='')
         oauth_flow.redirect_uri = 'postmessage'
         credentials = oauth_flow.step2_exchange(code)
-    except FlowExchangeError:
+    except oauth2client.client.FlowExchangeError:
         response = make_response(
             json.dumps('Failed to upgrade the authorization code.'), 401)
         response.headers['Content-Type'] = 'application/json'
