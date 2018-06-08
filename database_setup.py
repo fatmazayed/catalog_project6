@@ -79,7 +79,7 @@ def select_data():
     return res
 
 # adjust for project3
-engine = create_engine('sqlite:///Catalog.db')
+#engine = create_engine('sqlite:///Catalog.db')
 # adjust for project6
-#engine = create_engine('postgresql://catalog:password@localhost/catalog')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 Base.metadata.create_all(engine)
