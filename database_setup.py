@@ -72,7 +72,7 @@ class CatalogItem(Base):
 
 
 def select_data():
-    sql_cmd = sqlalchemy.text(" select  name as   from catalog_item   ")
+    sql_cmd = sqlalchemy.text(' select  *   from catalog_item   ')
     res = engine.execute(sql_cmd).fetchall()
     return res
 
