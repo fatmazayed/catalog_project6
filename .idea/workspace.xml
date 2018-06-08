@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3c57fc2-0f6c-4b92-897e-9b4f0724be37" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Catalog.db" afterPath="$PROJECT_DIR$/Catalog.db" />
-      <change beforePath="$PROJECT_DIR$/database_setup.py" afterPath="$PROJECT_DIR$/database_setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -414,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528463732554</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="name">
+      <created>1528464350177</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1528464350177</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -463,7 +468,8 @@
     <MESSAGE value="without login engine db ,ip" />
     <MESSAGE value="without login engine db ,ip,&quot;" />
     <MESSAGE value="without login engine db ,ip,&quot;,catalog" />
-    <option name="LAST_COMMIT_MESSAGE" value="without login engine db ,ip,&quot;,catalog" />
+    <MESSAGE value="name" />
+    <option name="LAST_COMMIT_MESSAGE" value="name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
